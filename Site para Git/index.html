@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Gustavo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>GustaDev</h1>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div>
+            <h2>Desenvolvedor Front-End</h2>
+            <p>HTML | CSS | JavaScript</p>
+            <a href="#contato" class="btn">Contato</a>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="projects">
+        <h3>Meus Projetos</h3>
+        <div class="project-grid">
+            <div class="card">
+                <h4>Landing Page</h4>
+                <p>Site responsivo para negócios</p>
+            </div>
+            <div class="card">
+                <h4>App JavaScript</h4>
+                <p>To-Do List interativa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato (Formulário Funcional) -->
+    <section id="contato" class="contact">
+        <h3>Envie uma mensagem</h3>
+        <form action="https://formsubmit.io/send/gsilva.contato0607@gmail.com" method="POST">
+            <input type="hidden" name="_redirect" value="obrigado.html">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Gustavo Silva | <a href="https://github.com/Gustavo-Silva" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

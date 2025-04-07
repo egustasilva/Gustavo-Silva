@@ -1,0 +1,150 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cores */
+:root {
+    --azul-escuro: #2c3e50;
+    --azul-claro: #3498db;
+    --amarelo: #f1c40f;
+}
+
+/* Geral */
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: var(--azul-escuro);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+nav a:hover {
+    color: var(--amarelo);
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, var(--azul-escuro), var(--azul-claro));
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--amarelo);
+    color: var(--azul-escuro);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Projetos */
+.projects {
+    padding: 4rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Contato */
+.contact {
+    padding: 4rem 1rem;
+    background: #f9f9f9;
+}
+
+.contact h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: var(--azul-escuro);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Obrigado */
+.thank-you {
+    text-align: center;
+    padding: 10rem 1rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--azul-escuro);
+    color: white;
+}
+
+footer a {
+    color: var(--amarelo);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
